@@ -10,7 +10,7 @@ function Banner() {
             />
                <div className="absolute top-1/2 w-full text-center" >
 
-                <p className="font-extrabold text-4xl text-red-300">Not sure where you go</p>
+                <p className="font-extrabold text-4xl text-black hover:scale-90 transform transition duration-200 ">Not sure where you go</p>
                <button className="text-purple-500 bg-white py-4 px-10 shadow-md rounded-full mt-10 hover:shadow-xl hover:bg-purple-300 hover:text-white"> im button</button>
                </div>
         </div>

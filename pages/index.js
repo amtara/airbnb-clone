@@ -4,8 +4,9 @@ import Header from "../components/Header";
 import LargeCard from "../components/LargeCard";
 import MediumCard from "../components/MediumCard";
 import SmallCard from "../components/SmallCard";
-
+import Banner from '../components/Banner'
 export default function Home({ exploreData, cardData }) {
+
   return (
     <div>
       <Head>
@@ -13,7 +14,7 @@ export default function Home({ exploreData, cardData }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-
+      <Banner />
       <main className="max-w-7xl mx-auto px-8 sm:px-16">
         <section className="pt-10">
           <h1 className="text-4xl font-semibold pb-5 ">explore Nearby</h1>
@@ -45,6 +46,7 @@ export default function Home({ exploreData, cardData }) {
         
         />
       </main>
+     
       <Fotter/>
     </div>
   );
@@ -55,6 +57,8 @@ export async function getStaticProps() {
     (res) => res.json()
   );
 
+
+
   const cardData = await fetch("https://links.papareact.com/zp1").then((res) =>
     res.json()
   );
@@ -62,6 +66,7 @@ export async function getStaticProps() {
     props: {
       exploreData,
       cardData,
+ 
     },
   };
 }

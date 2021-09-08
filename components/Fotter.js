@@ -27,7 +27,7 @@ function Fotter() {
                 <p>Airbnb Luxe</p>
 
             </div>
-            <div className="space-y-4 v  text-gray-700">
+            <div className="space-y-4 text-md  text-gray-700">
                  <h5 className="font-extrabold text-xl" >About</h5>
                 <p>How Airbnb works</p>
                 <p>Newsrooms</p>
